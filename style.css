@@ -54,3 +54,26 @@ a {
     justify-content: center;
     padding: 1rem 2rem;
 }
+
+.health-bar-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.HealthBar {
+    width: 200px;
+    height: 20px;
+}
+
+.separator {
+    width: 1px;
+    background-color: rgb(10, 10, 10);
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
