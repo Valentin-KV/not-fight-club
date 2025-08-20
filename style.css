@@ -67,13 +67,43 @@ a {
     height: 20px;
 }
 
+.battle-entity .avatar {
+    width: 300px;
+    height: 425px;
+}
+
+.battle-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.strike-zone {
+    display: flex;
+    flex-direction: row;
+}
+
 .separator {
     width: 1px;
     background-color: rgb(10, 10, 10);
-    border: 0;
+    /* border: 0;
     font: inherit;
     font-size: 100%;
     margin: 0;
     padding: 0;
-    vertical-align: baseline;
+    vertical-align: baseline; */
+}
+
+.log-box {
+    font-size: large;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-top: 1px solid black;
+    overflow-y: auto;
+    height: 25%;
 }
