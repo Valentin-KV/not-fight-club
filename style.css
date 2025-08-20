@@ -142,3 +142,49 @@ a {
     overflow-y: auto;
     height: 25%;
 }
+
+.character-page-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+}
+
+.character-info {
+    display: flex;
+    gap: 30px;
+}
+
+.character-info-avatar {
+    border: 1px solid rgb(19, 18, 18);
+    border-radius: 10px;
+    height: 425px;
+    width: 300px;
+    position: relative;
+}
+.character-info-avatar-img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.character-info-data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.character-info-data-res {
+    display: flex;
+    gap: 16px;
+}
+
+.character-info-data-res-win {
+    color: green;
+}
+.character-info-data-res-loses {
+    color: red;
+}
