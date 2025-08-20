@@ -188,3 +188,27 @@ a {
 .character-info-data-res-loses {
     color: red;
 }
+
+.settings-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+}
+
+.settings-edit-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.settings-edit-label {
+    font-size: 2rem;
+}
+
+.settings-edit-character-name {
+    font-size: 2rem;
+}
