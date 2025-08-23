@@ -60,4 +60,27 @@ const sectionNames = {
       popupBox.style.display = 'none';
     }
   });
+
+  const playerNameInput   = document.getElementById('playerNameInput');
+  const saveBtn = document.getElementById('savePlayerNameBtn');
+  const displayPlayerName = document.getElementById('displayPlayerName');
+
+  let playerName = localStorage.getItem('playerName') || playerNameInput.value.trim();
+  playerNameInput.value      = playerName;
+  displayPlayerName.textContent = playerName;
+
+  saveBtn.addEventListener('click', () => {
+    if (saveBtn.textContent === 'Edit') {
+      playerNameInput.disabled = false;
+      saveBtn.textContent = 'Save';
+      playerNameInput.focus();
+    } else {
+      const newName = playerNameInput.value.trim() || 'Player';
+      playerName = newName;
+      localStorage.setItem('playerName', playerName);
+      displayPlayerName.textContent = newName;
+      playerNameInput.disabled = true;
+      saveBtn.textContent = 'Edit';
+    }
+  });
 });

@@ -237,6 +237,25 @@ a {
     font-size: 24px;
 }
 
+.settings-item {
+    margin-bottom: 1rem;
+}
+
+.settings-item label {
+    margin-right: .5rem;
+}
+
+#playerNameInput {
+    padding: .25rem .5rem;
+    font-size: 1rem;
+}
+
+#savePlayerNameBtn {
+    margin-left: .5rem;
+    padding: .3rem .6rem;
+    cursor: pointer;
+}
+
 .register-page-box {
     display: flex;
     flex-direction: column;

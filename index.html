@@ -103,7 +103,7 @@
                     <div id="characterAvatarContainer" class="character-info-avatar clickable" title="Click to change avatar">
                         <img id="characterAvatar" class="character-info-avatar-img" src="assets/avatar/hero01.jpg" alt="Character Avatar"></div>
                         <div class="character-info-data">
-                            <div class="character-info-data-name">Герой</div>
+                            <div><p id="displayPlayerName"></p></div>
                             <div class="character-info-data-res">
                                 <span class="character-info-data-res-win">Wins: 3</span>
                                 <span class="character-info-data-res-loses">Loses: 1</span>
@@ -112,10 +112,11 @@
                     </div>
             </div>
             <div id="settings" class="settings-box content-section">
-                <div class="settings-edit-box">
-                    <span class="settings-edit-label">Player Name:</span>
-                    <span class="settings-edit-character-name">Hero</span>
-                    <button class="button-box">Edit</button>
+                <h2>Settings</h2>
+                <div class="settings-item">
+                    <label for="playerNameInput">Player name:</label>
+                    <input type="text" id="playerNameInput" value="Player1" disabled placeholder="Enter your name">
+                    <button id="savePlayerNameBtn">Edit</button>
                 </div>
             </div>
         </div>
