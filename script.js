@@ -33,4 +33,31 @@ const sectionNames = {
   fightBtn.addEventListener('click', () => {
     showSection('battle');
   });
+
+  const avatarContainer = document.getElementById('characterAvatarContainer');
+  const mainAvatar      = document.getElementById('characterAvatar');
+  const popupBox        = document.getElementById('myPopup');
+  const closeBtn        = document.querySelector('.popup-content-closeButton');
+  const avatarOptions   = document.querySelectorAll('.popup-avatar-item .avatar-image');
+
+  avatarContainer.addEventListener('click', () => {
+    popupBox.style.display = 'flex';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popupBox.style.display = 'none';
+  });
+
+  avatarOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      mainAvatar.src = option.src;
+      popupBox.style.display = 'none';
+    });
+  });
+
+  popupBox.addEventListener('click', e => {
+    if (e.target === popupBox) {
+      popupBox.style.display = 'none';
+    }
+  });
 });

@@ -278,6 +278,10 @@ a {
     opacity: .5;
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 .popup-box {
     display: none;
     align-items: center;

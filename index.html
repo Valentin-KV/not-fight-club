@@ -100,8 +100,8 @@
             </div>
             <div id="character" class="character-page-box content-section">
                 <div class="character-info">
-                    <div class="character-info-avatar">
-                        <img class="character-info-avatar-img" src="assets/avatar/hero01.jpg"></div>
+                    <div id="characterAvatarContainer" class="character-info-avatar clickable" title="Click to change avatar">
+                        <img id="characterAvatar" class="character-info-avatar-img" src="assets/avatar/hero01.jpg" alt="Character Avatar"></div>
                         <div class="character-info-data">
                             <div class="character-info-data-name">Герой</div>
                             <div class="character-info-data-res">
@@ -128,7 +128,7 @@
         </div>
         <button class="button-box register-button disabled">Create Character</button>
     </div>
-    <div class="popup-box content-section" id="myPopup">
+    <div id="myPopup" class="popup-box content-section">
         <div class="popup-content">
             <img data-testid="icon" class="icon-box clickable popup-content-closeButton" src="assets/icons/close.svg" alt="icon">
             <div class="popup-avatar-box">
