@@ -19,10 +19,12 @@
             </ul>
         </nav>
         <div class="main-box">
-            <div class="main-page">
-                <button class="button-box">Fight!</button>
+            <div id="main" class="main-page content-section active">
+                <div class="button-fight-wrapper">
+                    <button id="fightBtn" class="button-box">Fight!</button>
+                </div>
             </div>
-            <div class="battle-page">
+            <div id="battle" class="battle-page content-section">
                 <div class="battle-box">
                     <div class="battle-entity">
                         <p class="entity-name">Hero</p>
@@ -96,7 +98,7 @@
                 </div>
                 <div class="log-box"></div>
             </div>
-            <div class="character-page-box">
+            <div id="character" class="character-page-box content-section">
                 <div class="character-info">
                     <div class="character-info-avatar">
                         <img class="character-info-avatar-img" src="assets/avatar/hero01.jpg"></div>
@@ -109,7 +111,7 @@
                         </div>
                     </div>
             </div>
-            <div class="settings-box">
+            <div id="settings" class="settings-box content-section">
                 <div class="settings-edit-box">
                     <span class="settings-edit-label">Player Name:</span>
                     <span class="settings-edit-character-name">Hero</span>
@@ -118,7 +120,7 @@
             </div>
         </div>
     </div>
-    <div class="register-page-box">
+    <div id="register" class="register-page-box content-section">
         <span class="register-title">Create Your Character</span>
         <div class="register-text-box">
 	        <label class="register-field-label">Character Name</label>
@@ -126,7 +128,7 @@
         </div>
         <button class="button-box register-button disabled">Create Character</button>
     </div>
-    <div class="popup-box" id="myPopup">
+    <div class="popup-box content-section" id="myPopup">
         <div class="popup-content">
             <img data-testid="icon" class="icon-box clickable popup-content-closeButton" src="assets/icons/close.svg" alt="icon">
             <div class="popup-avatar-box">
@@ -148,5 +150,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
