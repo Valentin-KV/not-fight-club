@@ -101,6 +101,10 @@ a {
     height: 20px;
 }
 
+.battle-page {
+    margin-top: 60px;
+}
+
 .battle-entity {
     display: flex;
     flex-direction: column;

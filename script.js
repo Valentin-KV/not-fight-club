@@ -63,11 +63,11 @@ const sectionNames = {
 
   const playerNameInput   = document.getElementById('playerNameInput');
   const saveBtn = document.getElementById('savePlayerNameBtn');
-  const displayPlayerName = document.getElementById('displayPlayerName');
+  const displays = document.querySelectorAll('.player-name');
 
   let playerName = localStorage.getItem('playerName') || playerNameInput.value.trim();
   playerNameInput.value      = playerName;
-  displayPlayerName.textContent = playerName;
+  updateDisplays(playerName);
 
   saveBtn.addEventListener('click', () => {
     if (saveBtn.textContent === 'Edit') {
@@ -78,9 +78,13 @@ const sectionNames = {
       const newName = playerNameInput.value.trim() || 'Player';
       playerName = newName;
       localStorage.setItem('playerName', playerName);
-      displayPlayerName.textContent = newName;
+      updateDisplays(playerName);
       playerNameInput.disabled = true;
       saveBtn.textContent = 'Edit';
     }
   });
+
+  function updateDisplays(name) {
+    displays.forEach(el => el.textContent = name);
+  }
 });
