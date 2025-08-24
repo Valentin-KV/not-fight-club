@@ -1,3 +1,5 @@
+alert('Приветствую.\n Я успел сделать только первые 4 пункта задания. \n 5 пункт - Страница с боем (100 баллов) - я не успел сделать. \n Поэтому его функционал можете не проверять.\n Спасибо за понимание.');
+
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Селекторы
   const sections       = document.querySelectorAll('.content-section');
