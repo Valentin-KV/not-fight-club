@@ -56,7 +56,20 @@ a {
 }
 
 .register-page-box {
-    margin-top: 90px;
+    display: none;              /* отключаем отображение */
+    position: fixed;            /* фиксируем поверх контента */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #c5e7e7;  /* или любой сплошной фон */
+    z-index: 2000;              /* больше, чем у .nav-menu (1000) */
+    align-items: center;
+    justify-content: center;
+}
+
+.register-page-box.active {
+    display: flex;
 }
 
 .main-page {
